@@ -3,7 +3,6 @@ import { IGenerateObject } from "core/functions/IGenerateObject";
 import { InternalModule } from "./InternalModule";
 import { InternalModuleDate } from "./date/InternalModuleDate";
 import { InternalModuleFile } from "./file/InternalModuleFile";
-import { InternalModuleWeb } from "./web/InternalModuleWeb";
 import { InternalModuleHooks } from "./hooks/InternalModuleHooks";
 import { InternalModuleFrontmatter } from "./frontmatter/InternalModuleFrontmatter";
 import { InternalModuleSystem } from "./system/InternalModuleSystem";
@@ -16,7 +15,6 @@ export class InternalFunctions implements IGenerateObject {
     constructor(protected plugin: TemplaterPlugin) {
         this.modules_array.push(new InternalModuleDate(this.plugin));
         this.modules_array.push(new InternalModuleFile(this.plugin));
-        this.modules_array.push(new InternalModuleWeb(this.plugin));
         this.modules_array.push(new InternalModuleFrontmatter(this.plugin));
         this.modules_array.push(new InternalModuleHooks(this.plugin));
         this.modules_array.push(new InternalModuleSystem(this.plugin));

@@ -15,7 +15,6 @@
     - [tp.hooks](./internal-functions/internal-modules/hooks-module.md)
     - [tp.obsidian](./internal-functions/internal-modules/obsidian-module.md)
     - [tp.system](./internal-functions/internal-modules/system-module.md)
-    - [tp.web](./internal-functions/internal-modules/web-module.md)
     - [Contributing](./internal-functions/contribute.md)
 - [User Functions](./user-functions/overview.md)
     - [User Scripts](./user-functions/script-user-functions.md)
