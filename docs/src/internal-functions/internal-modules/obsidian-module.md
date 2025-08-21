@@ -22,9 +22,4 @@ tp.app.vault.getAllLoadedFiles()
 // Html to markdown
 <% tp.obsidian.htmlToMarkdown("\<h1>Heading\</h1>\<p>Paragraph\</p>") %>
 
-// HTTP request
-<%*
-const response = await tp.obsidian.requestUrl("https://jsonplaceholder.typicode.com/todos/1");
-tR += response.json.title;
-%>
 ```

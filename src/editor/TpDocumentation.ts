@@ -13,7 +13,6 @@ const module_names = [
     "obsidian",
     "system",
     "user",
-    "web",
 ] as const;
 export type ModuleName = (typeof module_names)[number];
 const module_names_checker: Set<string> = new Set(module_names);
