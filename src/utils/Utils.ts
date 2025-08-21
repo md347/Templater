@@ -166,12 +166,17 @@ export function arraymove<T>(
     fromIndex: number,
     toIndex: number
 ): void {
-    if (toIndex < 0 || toIndex === arr.length) {
+    if (
+        fromIndex < 0 ||
+        fromIndex >= arr.length ||
+        toIndex < 0 ||
+        toIndex >= arr.length ||
+        fromIndex === toIndex
+    ) {
         return;
     }
-    const element = arr[fromIndex];
-    arr[fromIndex] = arr[toIndex];
-    arr[toIndex] = element;
+    const [element] = arr.splice(fromIndex, 1);
+    arr.splice(toIndex, 0, element);
 }
 
 export function get_active_file(app: App) {
