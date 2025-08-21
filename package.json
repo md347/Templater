@@ -11,6 +11,7 @@
         "test-dev": "node esbuild.config.mjs test",
         "docs-dev": "mdbook serve docs",
         "commit": "cz",
+        "create-release": "node scripts/create-release.cjs",
         "release": "standard-version -t ''"
     },
     "keywords": [

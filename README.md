@@ -48,6 +48,10 @@ You can make a [pull request](https://github.com/SilentVoid13/Templater/pulls) t
 
 Check [this](https://silentvoid13.github.io/Templater/internal-functions/contribute.html) to get more information on how to develop a new internal variable / function.
 
+## Build & Release
+
+Run `pnpm create-release` to build the plugin and package the distributable files into a zip archive. If the [GitHub CLI](https://cli.github.com/) is installed and authenticated, the script will also create a release for the current version.
+
 ## License
 
 [Templater](https://github.com/SilentVoid13/Templater) is licensed under the GNU AGPLv3 license. Refer to [LICENSE](https://github.com/SilentVoid13/Templater/blob/master/LICENSE.TXT) for more information.
